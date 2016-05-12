@@ -8,3 +8,4 @@ CHANGELOG
 
 ## 1.0.0 (2016-05-12)
 * Init public repository
+* Added the player's code into the rep
