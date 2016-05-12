@@ -23,7 +23,7 @@
 
 __1. Download the package__
 
-Download the [kmlPlayer](https://github.com/lmihaidaniel/kmlplayer/archive/master.zip) package and move it in your assets folder.
+Download the [kmlPlayer][download-url] package and move it in your assets folder.
 
 __2. Add Script and Stylesheet__
 ``` html
@@ -96,8 +96,8 @@ Created and Maintained by [Mihai Lacatusu](https://github.com/lmihaidaniel)
 http://player.kumullus.com/
 
 [version-image]:https://img.shields.io/badge/version-1.0.0-green.svg?style=flat-square
-[docs-image]:https://img.shields.io/badge/docs-50%25-orange.svg?style=flat-square
+[docs-image]:https://img.shields.io/badge/docs-5%25-orange.svg?style=flat-square
 [license-image]:https://img.shields.io/badge/license-GNU-blue.svg?style=flat-square
 [license-url]:LICENSE
 [download-image]:https://img.shields.io/badge/download-1.0.0-yellowgreen.svg?style=flat-square
-[download-url]:http://player.kumullus.com/download
+[download-url]:https://github.com/lmihaidaniel/kmlplayer/archive/master.zip
