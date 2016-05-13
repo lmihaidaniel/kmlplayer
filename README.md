@@ -3,6 +3,7 @@
 ## HTML VIDEO PLAYER
 
 ![Build Status][version-image]
+[![video.js][videojs-image]][videojs-url]
 ![Docs Status][docs-image]
 [![MIT License][license-image]][license-url]
 [![Download][download-image]][download-url]
@@ -142,6 +143,8 @@ Created and Maintained by [Mihai Lacatusu](https://github.com/lmihaidaniel)
 http://player.kumullus.com/
 
 [version-image]:https://img.shields.io/badge/version-1.0.0-green.svg?style=flat-square
+[videojs-image]:https://img.shields.io/badge/video.js-5.10.2-green.svg?style=flat-square
+[videojs-url]:https://github.com/videojs/video.js
 [docs-image]:https://img.shields.io/badge/docs-5%25-orange.svg?style=flat-square
 [license-image]:https://img.shields.io/badge/license-GPL-blue.svg?style=flat-square
 [license-url]:LICENSE
