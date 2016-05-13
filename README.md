@@ -7,12 +7,12 @@
 [![MIT License][license-image]][license-url]
 [![Download][download-image]][download-url]
 
-> A complete HTML/CSS video player built on top of [video.js](https://github.com/videojs/video.js).
->
-> It aims to bring and sync interactive elements on top of the video.
+> A complete HTML/CSS video player that aims to bring interactity to the video 
+> Built on top of [video.js](https://github.com/videojs/video.js).
+> We strongly recommend to first visit (http://docs.videojs.com/docs/) and get familiar with "video js" before cotinuing using kmlplayer
 
 - [Installation and configuration](#installation-and-configuration)
-- [Usage](#usage)
+- [Usage](#usage-and-best-practices)
 - [Plugins](#plugins)
 - [Demos](#demos)
 - [F.A.Q](#frequently-asked-questions)
@@ -39,6 +39,18 @@ __2. Add Script and Stylesheet__
 </body>
 ```
 
+__2.1 IE8 support__
+If you'd like to support IE8, add the following lines inside the head of the page
+``` html
+<head>
+	...
+	<!--[if lte IE 9]>
+       <script src="assets/ie8/kmlPlayer.min.js"></script>
+   <![endif]-->
+	...
+</head>
+```
+
 __3. Add a `<video>` tag__
 ``` html
 <video class="videoWrapper video-js">
@@ -53,7 +65,41 @@ var myPlayer = kmlplayer(document.querySelector('video'));
 
 View working example on [codepen](http://codepen.io/lmihaidaniel/pen/WwmBrB)
 
-#### Usage
+#### Usage and best practices
+
+``` javascript
+var app = {
+  initiated: false,
+  init: function(){
+    if(!this.initiated){
+      ....
+      this.initiated = true;  
+    }
+    ....
+  },
+  scene: 1,
+  loadScene: function(){
+    this.scene += 1;
+    console.log('loading scene '+this.scene);
+    ...
+  }
+}
+
+var myPlayer = kmlplayer(document.querySelector('video'), {
+  timeline: {
+    responsive: true
+  }
+}, {
+  loadedmetadata: function(){
+    app.init();
+  },
+  end: function(){
+    app.loadScene();
+  }
+});
+
+
+```
 
 #### Plugins
 
@@ -63,10 +109,10 @@ View working example on [codepen](http://codepen.io/lmihaidaniel/pen/WwmBrB)
 - [Subtitles](#subtitles)
 - [Bounds](#bounds)
 - [Visibility](#visibility)
-- [utils](#utils)
 - [SCORM](#scorm)
 - [Context menu](#contextmenu)
 - [Powered by](#poweredBy)
+- [Utils](#utils)
 
 
 #### Demos
@@ -97,7 +143,7 @@ http://player.kumullus.com/
 
 [version-image]:https://img.shields.io/badge/version-1.0.0-green.svg?style=flat-square
 [docs-image]:https://img.shields.io/badge/docs-5%25-orange.svg?style=flat-square
-[license-image]:https://img.shields.io/badge/license-GNU-blue.svg?style=flat-square
+[license-image]:https://img.shields.io/badge/license-GPL-blue.svg?style=flat-square
 [license-url]:LICENSE
 [download-image]:https://img.shields.io/badge/download-1.0.0-yellowgreen.svg?style=flat-square
 [download-url]:https://github.com/lmihaidaniel/kmlplayer/archive/master.zip

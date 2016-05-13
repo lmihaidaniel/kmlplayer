@@ -1,0 +1,6 @@
+*.log
+*.mp4
+*.ogv
+*.webm
+node_modules/
+test/
