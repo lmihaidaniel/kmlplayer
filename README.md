@@ -102,18 +102,112 @@ var myPlayer = kmlplayer(document.querySelector('video'), {
 
 ```
 
+#### Events
+
+- [abort](#eventabort)
+- [canplay](#eventcanplay)
+- [canplaythrough](#eventcanplaythrough)
+- [durationchange](#eventdurationchange)
+- [emptied](#eventemptied)
+- [ended](#eventended)
+- [error](#eventerror)
+- [loadeddata](#eventloadeddata)
+- [loadedmetadata](#eventloadedmetadata)
+- [loadstart](#eventloadstart)
+- [pause](#eventpause)
+- [play](#eventplay)
+- [playing](#eventplaying)
+- [progress](#eventprogress)
+- [ratechange](#eventratechange)
+- [seeked](#eventseeked)
+- [seeking](#eventseeking)
+- [stalled](#eventstalled)
+- [suspend](#eventsuspend)
+- [timeupdate](#eventtimeupdate)
+- [volumechange](#eventvolumechange)
+- [waiting](#eventwaiting)
+
+
+##### Event abort 
+Fires when the loading of an audio/video is aborted
+##### Event canplay 
+Fires when the browser can start playing the audio/video
+##### Event canplaythrough  
+Fires when the browser can play through the audio/video without stopping for buffering
+##### Event durationchange  
+Fires when the duration of the audio/video is changed
+##### Event emptied 
+Fires when the current playlist is empty
+##### Event ended 
+Fires when the current playlist is ended
+##### Event error 
+Fires when an error occurred during the loading of an audio/video
+##### Event loadeddata
+Fires when the browser has loaded the current frame of the audio/video
+##### Event loadedmetadata
+Fires when the browser has loaded meta data for the audio/video
+##### Event loadstart
+Fires when the browser starts looking for the audio/video
+##### Event pause
+Fires when the audio/video has been paused
+##### Event play
+Fires when the audio/video has been started or is no longer paused
+##### Event playing
+Fires when the audio/video is playing after having been paused or stopped for buffering
+##### Event progress
+Fires when the browser is downloading the audio/video
+##### Event ratechange
+Fires when the playing speed of the audio/video is changed
+##### Event seeked
+Fires when the user is finished moving/skipping to a new position in the audio/video
+##### Event seeking
+Fires when the user starts moving/skipping to a new position in the audio/video
+##### Event stalled
+Fires when the browser is trying to get media data, but data is not available
+##### Event suspend
+Fires when the browser is intentionally not getting media data
+##### Event timeupdate
+Fires when the current playback position has changed * During playback this is fired every 15-250 milliseconds, depending on the playback technology in use.
+##### Event volumechange
+Fires when the volume has been changed
+##### Event waiting
+Fires when the video stops because it needs to buffer the next frame
+##### Event useractive
+Fired when the user is active, e.g. moves the mouse over the player
+##### Event userinactive
+ired when the user is inactive, e.g. a short delay after the last mouse move or control interaction
+
 #### Plugins
 
-- [Overlays](#overlay)
-- [Cuepoints](#cuepoint)
+- [Overlays](#overlays)
+- [Cuepoints](#cuepoints)
 - [Responsive](#responsive)
 - [Subtitles](#subtitles)
 - [Bounds](#bounds)
 - [Visibility](#visibility)
 - [SCORM](#scorm)
 - [Context menu](#contextmenu)
-- [Powered by](#poweredBy)
+- [Powered by](#poweredby)
 - [Utils](#utils)
+
+
+##### Overlays
+
+##### Cuepoints
+
+##### Responsive
+
+##### Subtitles
+
+##### Bounds
+
+##### Visibility
+
+##### Context menu
+
+##### Powered by
+
+##### Utils
 
 
 #### Demos
