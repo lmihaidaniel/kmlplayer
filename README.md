@@ -676,8 +676,6 @@ myPlayer.cuepoints.resume(); // resume all marker's actions
 
 myPlayer.cuepoints.destroy(); // removes all the cuepoints
 
-myPlayer.cuepoints.wrapper(); // updates cuepoints visuals' wrapper element, the visuals will be moved/created in the new wrapper
-
 ``` 
 
 ##### Responsive
@@ -710,7 +708,7 @@ myPlayer.responsive(el,{
 ```
 When making an 'el' responsive using this plugin you have access to new methods that can be directly called with the element
 ``` javascript
-el.responsive.update(o); // o = object with new parameters, see myPlayer.cuepoints.add to view all available parameters,
+el.responsive.update(o); // o = object with new parameters, see myPlayer.responsive(el, ...) up to view all available parameters,
 el.responsive.resize(); // scale the el without waiting for window.onResize event;
 el.responsive.disable(); // disable the automatic scaling of the element on video dimension/coordinates change
 el.responsive.enable();  // enable the automatic scaling of the element on video dimension/coordinates change
