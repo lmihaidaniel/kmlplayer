@@ -774,7 +774,25 @@ To be added
 ##### Powered by
 To be added
 ##### Utils
-To be added
+Available general tools for easing the work.
+``` javascript
+var myPlayer = kmlplayer(document.querySelector('video'));
+
+// To shorten load times, you should always offer the .mp3 as a last alternative.
+myPlayer.utils.preloader.addFiles('file1', 'mysound*:sound.ogg||sound.mp3'); 
+
+//for more details see https://github.com/jussi-kalliokoski/html5Preloader.js;
+
+myPlayer.utils.device.ie(); // check if the player runs in Internet Explorer, returns false or browser version
+myPlayer.utils.device.ios(); // check if the player runs on ipad/iphone
+
+myPlayer.utils.url.params(); //returns url parameters
+myPlayer.utils.url.hasClass(el, "className"); //check if el has a class
+myPlayer.utils.url.addClass(el, "className"); //add class to el
+myPlayer.utils.url.removeClass(el, "className"); //remove class from el
+myPlayer.utils.url.toggleClass(el, "className"); //toggle class for el
+
+```
 
 #### Demos
 To be added
