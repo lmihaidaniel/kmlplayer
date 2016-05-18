@@ -727,6 +727,11 @@ myPlayer.subtitle(src, options);
   }
 */
 ```
+You can set as a parameter an array of obects when ajax cannot be called.
+``` javascript
+var src = [{start:0,end:0,text:'Lorem ipsum dolor'}, ...];
+myPlayer.subtitle(src);
+```
 To unload/clear a subtitle call the plugin with no parameters
 ``` javascript
 myPlayer.subtitle(src);
