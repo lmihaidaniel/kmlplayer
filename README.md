@@ -721,9 +721,12 @@ myPlayer.subtitle(src, options);
 /*
   src: path to the subtitle text file
   options: {
-    minFont   : 1, // set the subtitle's text minimum size
-    ratioFont : 2, // set the subtitle's text size ratio increase
-    offset: 30 // set the Y offset of the subtitle
+    font:{
+      min: 1, // set the subtitle's text minimum size
+      ratio: 2, // set the subtitle's text size ratio increase
+    },
+    offset: 0, //set the Y offset of the subtitle
+    autoHide: true //make subtitles wrapper respond to userinactive/useractive timeline's position
   }
 */
 ```
