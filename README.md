@@ -625,8 +625,8 @@ myOverlay.destroy(); // destroy the currnet overlay and remove it from the playe
 //overlays methods
 
 myPlayer.overlays.add({}); // add an overlay to the player
-myPlayer.overlays.show(); // displays all the overlays added; also triggers overlays.onHide
-myPlayer.overlays.hide(); // hides all the overlays added; also triggers overlays.onShow
+myPlayer.overlays.show(); // displays all the overlays added; also triggers overlays.onSHow
+myPlayer.overlays.hide(); // hides all the overlays added; also triggers overlays.onHide
 
 myPlayer.overlays.el(); // get the overlays wrapper element inside the video player;
 
@@ -792,10 +792,10 @@ myPlayer.utils.device.ie(); // check if the player runs in Internet Explorer, re
 myPlayer.utils.device.ios(); // check if the player runs on ipad/iphone
 
 myPlayer.utils.url.params(); //returns url parameters
-myPlayer.utils.url.hasClass(el, "className"); //check if el has a class
-myPlayer.utils.url.addClass(el, "className"); //add class to el
-myPlayer.utils.url.removeClass(el, "className"); //remove class from el
-myPlayer.utils.url.toggleClass(el, "className"); //toggle class for el
+myPlayer.utils.hasClass(el, "className"); //check if el has a class
+myPlayer.utils.addClass(el, "className"); //add class to el
+myPlayer.utils.removeClass(el, "className"); //remove class from el
+myPlayer.utils.toggleClass(el, "className"); //toggle class for el
 
 ```
 
