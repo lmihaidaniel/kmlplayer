@@ -718,7 +718,7 @@ el.responsive.enable();  // enable the automatic scaling of the element on video
 Add/change the subtitle of a video
 ``` javascript
 var myPlayer = kmlplayer(document.querySelector('video'));
-myPlayer.subtitle(src, options);
+myPlayer.subtitles(src, options);
 /*
   src: path to the subtitle text file
   options: {
@@ -734,11 +734,11 @@ myPlayer.subtitle(src, options);
 You can set as a parameter an array of obects when ajax cannot be called.
 ``` javascript
 var src = [{start:0,end:0,text:'Lorem ipsum dolor'}, ...];
-myPlayer.subtitle(src);
+myPlayer.subtitles(src);
 ```
 To unload/clear a subtitle call the plugin with no parameters
 ``` javascript
-myPlayer.subtitle(src);
+myPlayer.subtitles(src);
 ```
 When player's controlBar is disabled/removed the autoHide setting of the subtitle is always 'false'
 ##### Bounds
