@@ -555,6 +555,7 @@ var myPlayer = kmlplayer(document.querySelector('video'), {
 - [SCORM](#scorm)
 - [Context menu](#contextmenu)
 - [Powered by](#poweredby)
+- [Keyboard](#keyboard)
 - [Utils](#utils)
 
 
@@ -739,7 +740,7 @@ To unload/clear a subtitle call the plugin with no parameters
 ``` javascript
 myPlayer.subtitle(src);
 ```
-
+When player's controlBar is disabled/removed the autoHide setting of the subtitle is always 'false'
 ##### Bounds
 Returns the video domElement bounds
 ``` javascript
@@ -800,6 +801,16 @@ myPlayer.utils.addClass(el, "className"); //add class to el
 myPlayer.utils.removeClass(el, "className"); //remove class from el
 myPlayer.utils.toggleClass(el, "className"); //toggle class for el
 
+```
+##### Keyboard
+By default the player has keyboard events to control the volume, seek, play, pause events with the keyboard.
+``` javascript
+var myPlayer = kmlplayer(document.querySelector('video'));
+myPlayer.keyboard.enable(); //returns the status of the keyboard events : true or false
+myPlayer.keyboard.enable(boolean); //enable or disable the keyboard events
+
+myPlayer.keyboard.destroy(); //remove the keyboard events
+myPlayer.keyboard.init(); //inits the keyboard events - by default this is triggered automatically at player's instatiation;
 ```
 
 #### Demos
