@@ -61,7 +61,60 @@ __3. Add a `<video>` tag__
 
 __4. Instantiate kmlPlayer__
 ``` javascript
-var myPlayer = kmlplayer(document.querySelector('video'));
+var myPlayer = kmlplayer(document.querySelector('video'), settings);
+
+settings = {
+  techOrder: [
+      "html5",
+      "flash"
+    ],
+    muted: false,
+    controls: true,
+    posterImage: false,
+    autoplay: false,
+    loop: false,
+    preload: "auto",
+    textTrackDisplay: false,
+    textTrackSettings: false,
+    controlBar: {
+      audioTrackButton: false,
+      volumeMenuButton: {
+        vertical: true,
+        inline: false
+      },
+      chaptersButton: false,
+      subtitlesButton: false,
+      captionsButton: false,
+      playbackRateMenuButton: false,
+      customControlSpacer: false,
+      fullscreenToggle: true,
+      currentTimeDisplay: false,
+      timeDivider: false,
+      durationDisplay: false,
+      liveDisplay: false,
+      remainingTimeDisplay: false,
+      descriptionsButton: false,
+      progressControl: {
+        seekBar: {
+          loadProgressBar: true,
+          mouseTimeDisplay: false
+        }
+      },
+      elementsOrder : ['playToggle', 'volumeMenuButton', 'progressControl', 'fullscreenToggle']
+    },
+    timeline: {
+      responsive: "scaled",
+      offsetY: -30,
+      width: 'full',
+      height: 44,
+      font: false
+    },
+    visibility: {
+      onHidden: function() {},
+      onVisible: function() {}
+    }
+}
+
 ```
 
 View working example on [codepen](http://codepen.io/lmihaidaniel/pen/WwmBrB)
