@@ -745,6 +745,9 @@ myPlayer.responsive(el,{
   offsetY: 0,
   active: true, // set window.onResize calling
   onVisible: false, // resize the element only when visible
+  transform: {
+    y: "-100%" // transform scaled position to -100% scaled height of the element.
+  },
   scale : { //set to true or false what you wish to be scaled to the video's postion and size
       x: true,
       y: true,
